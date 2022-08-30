@@ -15,7 +15,7 @@ const showModal = async (id) => {
             <p><strong> Chipset :</strong> ${feature.chipSet ? feature.chipSet : 'No Data Found'}</p>
             <p><strong> Display :</strong> ${feature.displaySize ? feature.displaySize : 'No Data Found'}</p>
             <p><strong> Storage :</strong> ${feature.storage ? feature.storage : 'No Data Found'}</p>
-            <p><strong> Sensors :</strong> ${feature.sensors ? feature.sensors : 'No Data Found'}</p>
+            <p class='text-wrap'><strong> Sensors :</strong> ${feature.sensors ? feature.sensors : 'No Data Found'}</p>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
