@@ -6,7 +6,7 @@ const loading = (isLoading) => {
     const phoneContainer = document.getElementById('phone-container');
     function hide(name) { name.classList.add('d-none') };
     if (isLoading === true) { loading.classList.remove('d-none'); hide(noData); hide(viewAll); hide(showLess); hide(phoneContainer) }
-    else { hide(loading); phoneContainer.classList.remove('d-none')};
+    else { hide(loading); phoneContainer.classList.remove('d-none') };
 };
 const displayData = (phones, limit = 6) => {
     const parent = document.getElementById('phone-container');
@@ -57,6 +57,7 @@ const search = () => {
     loading(true);
     const searchData = document.getElementById('search-input');
     loadData(searchData.value);
+    searchData.value = '';
 };
 
 function viewLimit(phones, limit) {
